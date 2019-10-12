@@ -12,12 +12,14 @@
 		}
 
 		function GetMonthFromNumber($number) {
+			$number = ltrim($number, '0');
 			$months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 			$month = $months[$number - 1];
 			return $month;
 		}
 
 		function GetDayFromNumber($number) {
+			$number = ltrim($number, '0');
 			$days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 			$day = $days[$number];
 			return $day;
