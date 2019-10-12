@@ -1,0 +1,26 @@
+{
+	"books": {
+		"All Books": "/books/all",
+		"All Books with limit": "/books/all?id=",
+		"Single Book": "/book?id=",
+		"Add Book": "/books/add [POST]"
+	},
+	"authors": {
+		"All Authors": "/authors/all",
+		"All Authors with limit": "/authors/all?limit=",
+		"Single Author": "/author?id="
+	},
+	"categories": {
+		"All Categories": "/categories/all",
+		"Single Category": "/category?id="
+	},
+	"search": {
+		"books": {
+			"Search Book Title": "/search/books?q=",
+			"Search Book Title with limit": "/search/books?q=&limit="
+		},
+		"authors": {
+			"Search Author Name": "/search/authors?q="
+		}
+	}
+}
