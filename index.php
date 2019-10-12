@@ -18,9 +18,9 @@
     require __DIR__ . '/src/config/init.php';
 
     // routes
-    require __DIR__ . '/src/routes/books.php';
-    require __DIR__ . '/src/routes/authors.php';
-    require __DIR__ . '/src/routes/categories.php';
-    require __DIR__ . '/src/routes/search.php';
-    require __DIR__ . '/src/routes/htmlPages.php';
-    require __DIR__ . '/src/routes/auth.php';
+    require __DIR__ . '/routes/books.php';
+    require __DIR__ . '/routes/authors.php';
+    require __DIR__ . '/routes/categories.php';
+    require __DIR__ . '/routes/search.php';
+    require __DIR__ . '/routes/htmlPages.php';
+    require __DIR__ . '/routes/auth.php';
