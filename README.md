@@ -48,15 +48,20 @@ View the [Leaf starter documentation](https://github.com/mr-phlames/leaf-php-boi
 
 ## Database connection
 
-In the _src/config/init.php_, a bunch of classes are initialised, amongst them is the Database class, to connect to your database, simply use fill out the details in the **_$database->connect()_** method
+In the _src/config/db.php_, connection variables are declared at the top of the file, enter your own details for your database.
 
 ```php
 <?php
 
-$router = new Router(new HttpRequest);
-
-$database = new Database();
-// connect(host, user, password, database_name, connection_type); 
-$connection = $database->connect('locahost', 'root', '', 'books', 'PDO');
+class Database {
+	private $host = 'localhost';
+	private $user = 'root';
+	private $password = '';
+	private $dbname = 'books';
+	// these were added to allow easy switching between local dev environment and the hosting platform 
+	// private $user = 'id11174187_root';
+	// private $password = '***********';
+	// private $dbname = 'id11174187_vierdb';
 ```
 
+# The _docs_ for this project are incomplete, use the readme instead

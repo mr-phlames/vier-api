@@ -1,18 +1,14 @@
 <?php
     class Database {
-        private $host = '';
-        private $user = '';
+        private $host = 'localhost';
+        private $user = 'root';
         private $password = '';
-        private $dbname = '';
+        private $dbname = 'books';
         // private $user = 'id11174187_root';
         // private $password = 'Templerun3000';
         // private $dbname = 'id11174187_vierdb';
 
-        public function connect($host, $user, $password, $dbname, $connectionType = "PDO") {
-            $this->host = $host;
-            $this->user = $user;
-            $this->password = $password;
-            $this->dbname = $dbname;
+        public function connect($connectionType = "PDO") {
             if($connectionType == 'PDO' || $connectionType == 'pdo') {
                 return $this->connectPDO();
             } else {
